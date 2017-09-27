@@ -1,0 +1,11 @@
+/* Stylesheet for Crazy Bob's Pumpkin Patch Website */
+
+body{
+    background-color:#000;
+}
+
+div#container{
+    margin:auto;
+    width:1024px;
+    background-color:orange;
+}
