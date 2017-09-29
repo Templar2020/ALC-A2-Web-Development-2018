@@ -15,6 +15,9 @@ div#container{
 }
 
 header{
+    background-image:url(../images/pumpkins.jpg);
+    background-position: right;
+    background-size:1100px;
     background-color:saddlebrown;
     width:100%;
     height:150px;
@@ -24,9 +27,13 @@ header{
 header h1 {
     text-align:center;
     padding-top:50px;
-    color:burlywood;
+    color:#f5ebb3;
     text-shadow:2px 2px 1px black;
     margin:0;
+    font-family: 'Pangolin', cursive;
+/*    font-family: 'Wendy One', sans-serif;*/
+    font-size:50px;
+
 }
 
 nav {
@@ -87,13 +94,37 @@ img#home-img{
 
 h2#h2-home{
     float:left;
+    margin-top:10px;
+    margin-bottom:0;
+    font-family: 'Wendy One', sans-serif;
 }
 
 p#p-home{
     float:left;
     width:56%;
+    margin-top:10px;
+}
+/* about.html */
+img#about-img{
+    width:400px;
+    display:block;
+    margin:15px;
+    border:5px outset brown;
+    float:left;
 }
 
+h2#h2-about{
+    float:left;
+    margin-top:10px;
+    margin-bottom:0;
+    font-family: 'Wendy One', sans-serif;
+}
+
+p#p-about{
+    float:left;
+    width:56%;
+    margin-top:10px;
+}
 
 
 
