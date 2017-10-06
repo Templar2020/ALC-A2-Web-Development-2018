@@ -5,6 +5,7 @@ body{
     background-color:#000;
     margin:0;
     padding:0;
+    font-family:sans-serif;
 }
 
 div#container{
@@ -158,8 +159,48 @@ figcaption{
     font-size:14px;
 }
 
+/* contact.html */
 
+form{
+    float:left;
+}
 
+h2#h2-contact{
+    width:100%;
+    float:left;
+    clear:both;
+    margin-left:10px;
+    
+}
+form#form-contact{
+    margin-left:10px;
+    
+}
+
+form input{
+    margin-bottom:10px;
+    
+}
+
+button#button-contact{
+    width:80px;
+    height:40px;
+    font-weight: 500;
+    margin-top:10px;
+    margin-bottom:15px;
+    box-shadow: 1px 1px 2px #000;
+    
+}
+
+div#map{
+    float:right;
+    margin-top:0;
+    margin-right:20px;
+}
+
+div#map h2{
+    margin-top:0;
+}
 
 
 
