@@ -40,12 +40,33 @@ div#blog-post{
     box-shadow: 3px 3px 3px #535353;
 }
 img#post-img{
+    align-self:auto;
     display: block;
     margin:5px;
     width:150px;
     height:150px;
     background-color: aliceblue;
 }
+
+div#post-body{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0 5px;
+}
+
+h2#post-title{
+    align-self:auto;
+}
+
+h5#post-stamp{
+    color:#535353;
+}
+
+p#post-text{
+    font-size:1.15em;
+}
+
 
 
 
