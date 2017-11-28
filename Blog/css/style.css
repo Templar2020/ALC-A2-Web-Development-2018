@@ -74,6 +74,10 @@ p#post-text{
     font-size:1.15em;
 }
 
+video#post-vid{
+    width:auto;
+    height:auto;   
+}
 
 
 
