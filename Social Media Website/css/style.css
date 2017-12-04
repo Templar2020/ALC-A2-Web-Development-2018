@@ -1,0 +1,59 @@
+/* Stylesheet for social media website */
+
+/* CSS Reset */
+html, body, div, header, h1, h2, h3, h4, h5, h6, nav, ul, ol, li, p, footer{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: darkgray;
+    font-family:sans-serif;
+}
+
+div#container{
+    display:flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    max-width:1024px;
+    width:80%;
+    margin:auto;    
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color:azure;
+    width:100%;
+    height:300px;
+}
+
+header img#profile_img{
+    display:block;
+    width:200px;
+    height:200px;
+    border-radius:100%;
+    background-color:#cecece;
+    align-self:flex-end;
+}
+
+nav{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
