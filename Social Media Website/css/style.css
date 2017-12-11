@@ -14,9 +14,8 @@ body{
 div#container{
     display:flex;
     flex-flow: column;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    background-color: #fff;
     max-width:1024px;
     width:80%;
     margin:auto;    
@@ -32,16 +31,105 @@ header{
 }
 
 header img#profile_img{
-    display:block;
-    width:200px;
-    height:200px;
+    display:block;    
+    width: 200px;
+    height: 200px;   
     border-radius:100%;
     background-color:#cecece;
     align-self:flex-end;
+    margin-left:16px;
+}
+
+header div#profile_info{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    margin-left:32px;
+}
+
+div#profile_info h2{
+
+    width:100%;
+    order:1;
+    font-size:2em;
+}
+
+div#profile_info h4{
+   width:100%;
+   order:2;
+   font-size:1em;
 }
 
 nav{
+   width:10%;
+   margin:10px 0 0 90px;
+   order:1;    
+}
+nav ul{
+    list-style: none;
+}
+nav li{
     
+}
+nav li a{
+  text-decoration: none;
+  font-family:sans-serif;
+  color:#000;    
+}
+
+
+
+div#content{
+    width:75%;
+    order:2;
+}
+
+div#content div.post{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin:8px auto;
+    width:85%;
+    height:auto;
+    background-color:#fff;
+    box-shadow: 2px 2px 2px black;
+    
+}
+div#content div.post img.ppp{
+    display:block;
+    order: 1;
+    margin:6px;
+    background-color:lightgray;
+    width:120px;
+    height:120px;
+    
+}
+
+div#content div.post h3.pnp{
+    order:2;
+    width:60%;
+    height:10%;
+    margin:6px;
+}
+
+div#content div.post p.time-stamp{
+    
+    order:3;
+}
+
+div#content div.post h5.p-comments{
+    order:4;
+}
+
+div#content div.post h5.p-likes{
+    order:5;
+}
+
+footer{
+    width:100%;
+    order:3;
 }
 
 
