@@ -81,23 +81,31 @@ div#profile_info h4{
    font-size:1em;
 }
 
+/* Navigation Start */
 nav{
    width:15%;
    margin:10px 0 0 90px;
    order:1;    
 }
+
 nav ul{
     list-style: none;
 }
+
 nav li{
     
 }
+
 nav li a{
   text-decoration: none;
   font-family:sans-serif;
-  color:#000;    
+  color:#fff;    
 }
 
+nav li a:hover{
+    color:#a9f7f7;
+}
+/* Navigation End */
 
 
 div#content{
@@ -168,20 +176,45 @@ div#content div.post div.post-foot{
     
 }
 
-div#content div.post div.post-foot h5.p-comments{
+div#content div.post div.post-foot div.p-comments{
+    display: flex;
+    flex:1 1 auto;
+    flex-wrap: wrap;
+    flex-direction:column;
+    order:1;
+    margin:6px;
+}
+/*Comment Title H5*/
+div#content div.post div.post-foot div.p-comments h5{
+    flex: 100 1 auto;
+    flex-wrap: wrap;    
     order:1;
 }
-
-div#content div.post div.post-foot h5.p-likes{
+/* Comment Picture*/
+div#content div.post div.post-foot div.p-comments .com-pic{
+    flex:100;
     order:2;
+    border-radius:100px;
+    width:50px;
+}
+/* Comment Paragraph*/
+div#content div.post div.post-foot div.p-comments .com-p{
+    order:3;
+}
+
+div#content div.post div.post-foot div.p-likes{
+    order:2;
+    margin:6px;
+    color:darkgray;
 }
 
 footer{
     order:3;
     width:100%;
     text-align: center;
-    color:#000;
-    
+    color:#fff;
+    margin:12px 
+        
 }
 
 
