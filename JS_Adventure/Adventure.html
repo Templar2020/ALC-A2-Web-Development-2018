@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adventure Game</title>
+    </head>
+    <body>
+        <h1>Adventure Game v0.1</h1>
+        <p>By: Mr. Powell</p>
+        <script>
+            Start();
+            
+            function Start(){
+                var playerName = prompt("What is your name traveller?","Bub");
+                alert("Welcome to the land of OZ, "+ playerName );
+                var beginAdv = confirm("Are you ready to begin you adventure?");
+                
+                if(beginAdv){
+                    Village();
+                }
+                else{
+                    alert("You have no guts!!! Good day Sir! or Ma'am");
+                }
+                
+            }
+            
+            function Village(){
+                var village = prompt("You arrive at munchkin village. There are little people about their business. You see a blacksmith, inn, candyshop and the yellow brick road.").toLowerCase();
+                
+                if(village == "blacksmith" || village == "go to blacksmith"){
+                    alert("The little bearded blacksmith give you a crusty look and goes back to work, ignoring your presence.");
+                    Village();
+                }
+                else if(village == "inn" || village == "go to inn"){
+                    alert("you enter the inn and the innkeeper says 'What can I do for you? A room, food, a sit by the hearth fire?");
+                    Village();
+                }
+                else if(village =="candyshop" || village == "go to candyshop"){
+                    alert("There is a sign attached to the door that says 'Out to lunch, will be back at sometime");
+                    Village();
+                }
+                else if(village == "yellow brick road" || village == "take yellow brick road"){
+                    
+                    YBR();
+                    
+                }
+                else{
+                    alert("I dont undestand " + village);
+                    Village();
+                }
+            }
+            
+            function YBR(){
+                var ybr = prompt("You begin to follow the yellow brick road it goes on for a mile or so before you reach the countryside and notice a Scarecrow beside a corn field. The Scarecrow has a very sad look on his face. Do you stop to talk or move on?").toLowerCase();
+                
+                if(ybr == "talk" || ybr == "talk with scarecrow"){
+                    alert("The scarecrow moves suddenly as if startled. He looks around to see who is talk to him.");
+                    
+                    var scarecrow = prompt("He doesn't seem to notice you down below. He is hung upon a a stake ten feet up in the air. How will you get his attendion, yell or throw rocks");
+                    
+                    switch(scarecrow){
+                        case "yell":
+                            alert("The scarecow, cries out ' who's yelling at me.' You say down here Mr. Scarecrow! He looks down and says 'Oh, I didn't see you there");
+                        break;
+                        case "throw rocks":
+                            alert("The scarecrow wakes alarmed and scared. 'Hey who did that' mumbles the scarecrow. You wave to get his attention. He says ' how rude! Who throws rocks at a sleeping person!?'");
+                        break;
+                        default:
+                            alert("I can't do that!");
+                            
+                            YBR();
+                            
+                    }
+                }
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
