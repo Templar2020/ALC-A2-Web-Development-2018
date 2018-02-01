@@ -7,11 +7,43 @@
         <h1>Adventure Game v0.1</h1>
         <p>By: Mr. Powell</p>
         <script>
+            
+            
+            var inventory = {
+                coins:100,
+                rubyslippers:0,
+                apples:0,
+                goldenkey:0,
+                heart:0,
+                brain:0,
+                courage:0,
+                sword:0,
+            }
+            
+            var player = {
+                firstname:"",
+                lastname:"",
+                gender:"",
+                age:"",
+                health:100,
+                score:0,                
+            }
+            
+            var flyingmonkey = {
+                description:"A monkey with wings trying to attack me",
+                damage:10,
+                health:30,
+            }
+            
             Start();
             
             function Start(){
-                var playerName = prompt("What is your name traveller?","Bub");
-                alert("Welcome to the land of OZ, "+ playerName );
+               player.firstname = prompt("What is your first name traveller?");
+               player.lastname = prompt("What is your last name ?");
+               player.gender = prompt("Gender?");
+               player.age = prompt("how old are you?");    
+                
+                alert("Welcome to the land of OZ, "+ player.firstname + " "+ player.lastname +"\n"+ player.age);
                 var beginAdv = confirm("Are you ready to begin you adventure?");
                 
                 if(beginAdv){
@@ -27,8 +59,20 @@
                 var village = prompt("You arrive at munchkin village. There are little people about their business. You see a blacksmith, inn, candyshop and the yellow brick road.").toLowerCase();
                 
                 if(village == "blacksmith" || village == "go to blacksmith"){
-                    alert("The little bearded blacksmith give you a crusty look and goes back to work, ignoring your presence.");
-                    Village();
+                    
+                    var blacksmith = prompt("The little bearded blacksmith gives you a crusty look and says what can I do for you? \np -Buy Sword").toLowerCase();
+                    
+                    if(blacksmith == "buy sword" && inventory.coins == 100){
+                        inventory.coins = inventory.coins - 100;
+                        inventory.sword = 1;
+                        alert("You've bought a sword! \n Swords = " + inventory.sword + "\n Coins = " + inventory.coins);
+                    }
+                    else{
+                        Alert("You do not have enough moola! Go away!");
+                    }
+                    Village(); 
+                    
+                    
                 }
                 else if(village == "inn" || village == "go to inn"){
                     alert("you enter the inn and the innkeeper says 'What can I do for you? A room, food, a sit by the hearth fire?");
